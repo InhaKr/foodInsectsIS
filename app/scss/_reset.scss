@@ -1,0 +1,59 @@
+html {
+  box-sizing: border-box;
+  /* scroll-behavior: smooth; */
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+/* У всех ol ul (у к.т. есть атрибут class) обнуляю внутренние отступы */
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+  /*убираем точечки возле эл-ов меню*/ 
+}
+
+img {
+  max-width: 100%;
+  /*чтоб не появлялось скрола, когда экран меньше*/
+  display: block;
+  /*таким образом мы убираем отступы у img*/
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  /*наследование шрифтов*/
+}
+
+ a[class] {
+    text-decoration: none;
+  }
